@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@sentry/nestjs": "^10.40.0",
+    "@sentry/node": "^10.40.0"
+  }
+}

@@ -1,0 +1,346 @@
+name: CI/CD Pipeline for NSE Intelligence Platform
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  release:
+    types: [published]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  # Code Quality and Security
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: |
+            backend/package-lock.json
+            frontend/package-lock.json
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install backend dependencies
+        working-directory: ./backend
+        run: npm ci
+
+      - name: Install frontend dependencies
+        working-directory: ./frontend
+        run: npm ci
+
+      - name: Install Python dependencies
+        working-directory: ./osint-processor
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Run backend linting
+        working-directory: ./backend
+        run: npm run lint
+
+      - name: Run frontend linting
+        working-directory: ./frontend
+        run: npm run lint
+
+      - name: Run Python linting
+        working-directory: ./osint-processor
+        run: |
+          flake8 --max-line-length=120 --ignore=E203,W503 .
+          black --check .
+          isort --check-only .
+
+      - name: Run backend tests
+        working-directory: ./backend
+        run: npm run test
+
+      - name: Run frontend tests
+        working-directory: ./frontend
+        run: npm run test
+
+      - name: Run Python tests
+        working-directory: ./osint-processor
+        run: |
+          pytest --cov=. --cov-report=xml tests/
+
+      - name: Security scan (backend)
+        working-directory: ./backend
+        run: npm audit --audit-level high
+
+      - name: Security scan (frontend)
+        working-directory: ./frontend
+        run: npm audit --audit-level high
+
+      - name: Security scan (Python)
+        working-directory: ./osint-processor
+        run: |
+          bandit -r . -f json -o bandit-report.json
+          safety check --json --output safety-report.json
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./osint-processor/coverage.xml
+          fail_ci_if_error: false
+
+  # Build Docker Images
+  build:
+    needs: quality
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    outputs:
+      backend-image: ${{ steps.meta-backend.outputs.tags }}
+      frontend-image: ${{ steps.meta-frontend.outputs.tags }}
+      osint-image: ${{ steps.meta-osint.outputs.tags }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (backend)
+        id: meta-backend
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-backend
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=sha,prefix={{branch}}-
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Build and push backend image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./backend
+          file: ./backend/Dockerfile.prod
+          push: true
+          tags: ${{ steps.meta-backend.outputs.tags }}
+          labels: ${{ steps.meta-backend.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Extract metadata (frontend)
+        id: meta-frontend
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-frontend
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=sha,prefix={{branch}}-
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Build and push frontend image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./frontend
+          file: ./frontend/Dockerfile.prod
+          push: true
+          tags: ${{ steps.meta-frontend.outputs.tags }}
+          labels: ${{ steps.meta-frontend.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Extract metadata (OSINT)
+        id: meta-osint
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-osint
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=sha,prefix={{branch}}-
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Build and push OSINT image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./osint-processor
+          file: ./osint-processor/Dockerfile.prod
+          push: true
+          tags: ${{ steps.meta-osint.outputs.tags }}
+          labels: ${{ steps.meta-osint.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  # Integration Tests
+  integration:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: test
+          POSTGRES_USER: test
+          POSTGRES_DB: test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+      redis:
+        image: redis:7-alpine
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 6379:6379
+
+      elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+        env:
+          - discovery.type=single-node
+          - xpack.security.enabled=false
+          - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+        options: >-
+          --health-cmd "curl http://localhost:9200/_cluster/health"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+        ports:
+          - 9200:9200
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Start services with built images
+        run: |
+          echo "BACKEND_IMAGE=${{ needs.build.outputs.backend-image }}" >> .env.test
+          echo "FRONTEND_IMAGE=${{ needs.build.outputs.frontend-image }}" >> .env.test
+          echo "OSINT_IMAGE=${{ needs.build.outputs.osint-image }}" >> .env.test
+          docker-compose -f docker-compose.test.yml up -d
+
+      - name: Wait for services to be ready
+        run: |
+          timeout 300 bash -c 'until curl -f http://localhost:3001/health; do sleep 5; done'
+          timeout 300 bash -c 'until curl -f http://localhost:3000; do sleep 5; done'
+          timeout 300 bash -c 'until curl -f http://localhost:8000/health; do sleep 5; done'
+
+      - name: Run integration tests
+        run: |
+          npm run test:integration
+
+      - name: Cleanup
+        if: always()
+        run: |
+          docker-compose -f docker-compose.test.yml down -v
+
+  # Deploy to Staging
+  deploy-staging:
+    needs: [build, integration]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    environment: staging
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to staging
+        run: |
+          echo "Deploying to staging environment"
+          # Add your staging deployment logic here
+          # This could involve SSH to staging server, kubectl apply, etc.
+
+      - name: Run health checks
+        run: |
+          echo "Running health checks on staging"
+          # Add health check logic here
+
+  # Deploy to Production
+  deploy-production:
+    needs: [build, integration]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release'
+    environment: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to production
+        run: |
+          echo "Deploying to production environment"
+          # Add your production deployment logic here
+
+      - name: Run production health checks
+        run: |
+          echo "Running health checks on production"
+          # Add production health check logic here
+
+      - name: Notify team
+        if: success()
+        run: |
+          echo "Production deployment successful!"
+          # Add notification logic here (Slack, email, etc.)
+
+  # Security Scanning
+  security:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    steps:
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ needs.build.outputs.backend-image }}
+          format: 'sarif'
+          output: 'trivy-results-backend.sarif'
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results-backend.sarif'
+
+      - name: Run Trivy on frontend image
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ needs.build.outputs.frontend-image }}
+          format: 'sarif'
+          output: 'trivy-results-frontend.sarif'
+
+      - name: Upload frontend scan results
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results-frontend.sarif'
+
+      - name: Run Trivy on OSINT image
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ needs.build.outputs.osint-image }}
+          format: 'sarif'
+          output: 'trivy-results-osint.sarif'
+
+      - name: Upload OSINT scan results
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results-osint.sarif'

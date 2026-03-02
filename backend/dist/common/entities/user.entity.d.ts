@@ -1,0 +1,34 @@
+import { Message } from './message.entity';
+import { MessageReaction } from './message-reaction.entity';
+import { ModerationFlag } from './moderation-flag.entity';
+import { Notification } from './notification.entity';
+import { UserPreference } from './user-preference.entity';
+import { AuditLog } from './audit-log.entity';
+import { DiscussionChannel } from './discussion-channel.entity';
+import { Portfolio } from './portfolio.entity';
+import { PriceAlert } from './price-alert.entity';
+import { UserRole } from '../enums/user-role.enum';
+export declare class User {
+    id: string;
+    username: string;
+    email: string;
+    passwordHash: string;
+    displayName: string;
+    role: UserRole;
+    isVerified: boolean;
+    isModerator: boolean;
+    isAdmin: boolean;
+    reputationScore: number;
+    createdAt: Date;
+    lastActive: Date;
+    messages: Message[];
+    reactions: MessageReaction[];
+    flaggedItems: ModerationFlag[];
+    moderatedItems: ModerationFlag[];
+    notifications: Notification[];
+    preferences: UserPreference[];
+    auditLogs: AuditLog[];
+    createdChannels: DiscussionChannel[];
+    portfolios: Portfolio[];
+    priceAlerts: PriceAlert[];
+}

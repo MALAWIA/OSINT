@@ -1,0 +1,760 @@
+2026-02-09 03:46:58,843 - __main__ - INFO - Starting NSE OSINT Processor
+2026-02-09 03:46:58,844 - __main__ - INFO - Running initial collection and processing
+2026-02-09 03:46:58,844 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 03:46:58,851 - database - ERROR - Query execution failed: relation "news_sources" does not exist
+LINE 1: SELECT * FROM news_sources WHERE is_active = true
+                      ^
+
+2026-02-09 03:46:58,851 - __main__ - ERROR - Initial run failed: relation "news_sources" does not exist
+LINE 1: SELECT * FROM news_sources WHERE is_active = true
+                      ^
+
+2026-02-09 03:46:58,852 - __main__ - INFO - Starting scheduler loop
+2026-02-09 03:48:58,912 - processors_simple - INFO - Starting NLP processing
+2026-02-09 03:48:58,923 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 03:50:58,975 - processors_simple - INFO - Starting NLP processing
+2026-02-09 03:50:58,976 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 03:51:59,004 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 03:51:59,018 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 03:52:59,044 - processors_simple - INFO - Starting NLP processing
+2026-02-09 03:52:59,045 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 03:54:59,099 - processors_simple - INFO - Starting NLP processing
+2026-02-09 03:54:59,100 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 03:56:59,156 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 03:56:59,164 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 03:56:59,164 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 03:56:59,166 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 03:56:59,166 - processors_simple - INFO - Starting NLP processing
+2026-02-09 03:56:59,166 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 03:58:59,297 - processors_simple - INFO - Starting NLP processing
+2026-02-09 03:58:59,298 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:00:59,435 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:00:59,435 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:01:59,495 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:01:59,511 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:02:59,547 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:02:59,548 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:04:59,652 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:04:59,652 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:06:59,733 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:06:59,792 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:06:59,793 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:06:59,797 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:06:59,797 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:06:59,798 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:08:59,932 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:08:59,935 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:11:00,025 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:11:00,026 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:12:00,061 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:12:00,075 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:13:00,108 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:13:00,109 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:15:00,170 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:15:00,171 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:17:00,245 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:17:00,267 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:17:00,268 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:17:00,269 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:17:00,270 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:17:00,271 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:19:00,382 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:19:00,384 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:21:00,847 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:21:00,848 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:22:00,289 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:22:00,313 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:23:01,832 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:23:01,842 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:25:02,727 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:25:02,734 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:27:00,408 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:27:00,423 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:27:00,426 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:27:00,428 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:27:03,435 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:27:03,437 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:29:04,256 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:29:04,257 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:31:04,873 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:31:04,875 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:32:01,244 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:32:01,248 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:33:05,614 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:33:05,616 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:35:06,448 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:35:06,449 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:37:01,034 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:37:01,038 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:37:02,039 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:37:02,041 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:37:07,131 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:37:07,132 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:39:07,860 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:39:07,860 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:41:07,875 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:41:07,876 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:42:02,207 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:42:02,218 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:43:08,763 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:43:08,767 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:45:09,543 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:45:09,550 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:46:59,249 - __main__ - INFO - Starting full sync cycle
+2026-02-09 04:46:59,250 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:46:59,255 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:47:29,256 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:47:29,256 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:47:29,257 - __main__ - INFO - Full sync completed successfully
+2026-02-09 04:47:30,259 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:47:30,261 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:47:30,262 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:47:30,264 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:47:30,266 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:47:30,267 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:49:30,810 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:49:30,810 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:51:31,154 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:51:31,155 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:52:30,335 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:52:30,339 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:53:31,745 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:53:31,746 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:55:31,957 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:55:31,959 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:57:30,268 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:57:30,271 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:57:31,275 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 04:57:31,288 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 04:57:32,298 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:57:32,301 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 04:59:32,741 - processors_simple - INFO - Starting NLP processing
+2026-02-09 04:59:32,742 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 05:01:32,915 - processors_simple - INFO - Starting NLP processing
+2026-02-09 05:01:32,916 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 05:02:31,993 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 05:02:31,999 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 05:03:33,076 - processors_simple - INFO - Starting NLP processing
+2026-02-09 05:03:33,079 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 05:05:33,252 - processors_simple - INFO - Starting NLP processing
+2026-02-09 05:05:33,254 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 05:07:30,399 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 05:07:30,422 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 05:07:32,425 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 05:07:32,429 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 05:07:33,431 - processors_simple - INFO - Starting NLP processing
+2026-02-09 05:07:33,434 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 06:47:15,597 - processors_simple - INFO - Starting NLP processing
+2026-02-09 06:47:15,673 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 06:47:15,822 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 06:47:15,906 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 06:47:15,912 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 06:47:15,939 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 06:47:15,959 - __main__ - INFO - Starting full sync cycle
+2026-02-09 06:47:15,986 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 06:47:16,039 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:37:34,267 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:37:34,376 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:37:34,417 - __main__ - INFO - Full sync completed successfully
+2026-02-09 12:37:35,442 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:37:35,487 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:37:35,567 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:37:35,608 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:37:35,610 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:37:35,612 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:39:35,616 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:39:35,640 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:41:36,285 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:41:36,288 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:42:36,014 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:42:36,129 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:43:36,547 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:43:36,554 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:45:37,542 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:45:37,543 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:47:36,492 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:47:36,496 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:47:36,497 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:47:36,499 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:47:38,501 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:47:38,503 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:49:38,772 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:49:38,773 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:51:39,356 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:51:39,357 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:52:37,397 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:52:37,738 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:53:39,738 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:53:39,777 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:55:40,607 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:55:40,612 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:57:37,374 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:57:37,398 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:57:38,399 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 12:57:38,402 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 12:57:41,408 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:57:41,408 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 12:59:41,941 - processors_simple - INFO - Starting NLP processing
+2026-02-09 12:59:42,046 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:01:42,885 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:01:42,888 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:02:39,088 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:02:39,111 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:03:43,430 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:03:43,431 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:05:43,799 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:05:43,800 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:07:37,565 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:07:37,568 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:07:39,570 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:07:39,572 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:07:44,578 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:07:44,583 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:18:52,283 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:18:52,401 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:18:52,430 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:18:52,485 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:18:52,516 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:18:52,557 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:20:52,971 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:20:52,975 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:22:53,393 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:22:53,431 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:23:52,744 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:23:52,758 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:24:54,160 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:24:54,162 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:26:54,563 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:26:54,565 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:28:53,180 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:28:53,185 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:28:53,185 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:28:53,187 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:28:55,194 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:28:55,207 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:30:56,084 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:30:56,093 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:32:56,881 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:32:56,882 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:33:54,022 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:33:54,028 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:34:57,414 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:34:57,415 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:46:19,260 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:46:19,780 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:46:19,819 - __main__ - INFO - Starting full sync cycle
+2026-02-09 13:46:20,245 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:46:20,435 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:46:50,702 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:46:50,704 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:46:50,704 - __main__ - INFO - Full sync completed successfully
+2026-02-09 13:46:50,707 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:46:50,722 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:46:50,723 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:46:50,727 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:48:20,553 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:48:20,564 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:50:59,362 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:50:59,498 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:51:51,314 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:51:51,358 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:53:00,430 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:53:00,435 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:55:39,662 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:55:39,708 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:56:50,837 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:56:50,851 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:56:51,854 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 13:56:51,859 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 13:57:39,921 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:57:39,922 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 13:59:40,070 - processors_simple - INFO - Starting NLP processing
+2026-02-09 13:59:40,074 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:01:40,229 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:01:40,231 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:01:52,246 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:01:52,250 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:03:40,394 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:03:40,396 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:05:40,541 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:05:40,543 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:06:51,626 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:06:51,629 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:06:52,631 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:06:52,635 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:07:40,698 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:07:40,701 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:09:40,865 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:09:40,866 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:11:41,030 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:11:41,031 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:11:53,009 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:11:53,029 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:13:41,163 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:13:41,164 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:15:41,320 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:15:41,322 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:17:04,138 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:17:04,208 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:17:04,212 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:17:04,216 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:17:42,246 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:17:42,248 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:19:42,370 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:19:42,371 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:21:42,512 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:21:42,512 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:22:04,523 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:22:04,534 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:23:42,575 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:23:42,575 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:25:42,623 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:25:42,623 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:27:04,661 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:27:04,670 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:27:04,671 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:27:04,674 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:27:42,690 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:27:42,691 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:29:42,741 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:29:42,741 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:31:42,790 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:31:42,790 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:32:04,813 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:32:04,819 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:33:42,924 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:33:42,925 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:35:43,256 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:35:43,257 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:37:05,322 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:37:05,326 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:37:05,327 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:37:05,328 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:37:43,380 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:37:43,381 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:39:43,552 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:39:43,552 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:41:44,332 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:41:44,335 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:42:05,356 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:42:05,377 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:43:44,557 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:43:44,558 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:45:44,799 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:45:44,800 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:46:50,951 - __main__ - INFO - Starting full sync cycle
+2026-02-09 14:46:50,952 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:46:50,956 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:47:20,958 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:47:20,958 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:47:20,959 - __main__ - INFO - Full sync completed successfully
+2026-02-09 14:47:21,961 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:47:21,965 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:47:21,966 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:47:21,973 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:47:45,013 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:47:45,023 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:49:45,277 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:49:45,277 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:51:45,468 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:51:45,472 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:52:22,599 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:52:22,605 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:53:45,806 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:53:45,809 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:55:46,132 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:55:46,133 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:57:22,278 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:57:22,282 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:57:23,283 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 14:57:23,286 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 14:57:46,326 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:57:46,326 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 14:59:46,644 - processors_simple - INFO - Starting NLP processing
+2026-02-09 14:59:46,645 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:01:46,858 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:01:46,868 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:02:23,921 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:02:23,925 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:03:47,085 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:03:47,106 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:05:47,464 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:05:47,490 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:07:22,708 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:07:22,711 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:07:24,714 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:07:24,717 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:07:47,730 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:07:47,731 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:09:47,869 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:09:47,877 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:11:48,102 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:11:48,103 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:12:25,203 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:12:25,209 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:13:48,337 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:13:48,338 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:15:48,555 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:15:48,555 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:17:22,799 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:17:22,803 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:17:25,807 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:17:25,811 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:17:48,823 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:17:48,823 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:19:48,994 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:19:48,995 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:21:49,196 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:21:49,222 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:22:26,336 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:22:26,349 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:23:49,583 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:23:49,584 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:25:49,768 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:25:49,770 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:27:23,012 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:27:23,018 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:27:27,023 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:27:27,035 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:27:50,151 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:27:50,168 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:29:50,433 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:29:50,436 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:32:04,557 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:32:04,628 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:32:27,804 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:32:27,859 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:34:05,213 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:34:05,293 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:36:05,734 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:36:05,735 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:37:23,863 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:37:23,870 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:37:27,873 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:37:27,874 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:38:05,906 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:38:05,907 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:40:06,280 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:40:06,281 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:42:06,539 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:42:06,543 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:42:28,600 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:42:28,604 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:44:06,714 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:44:06,715 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:46:07,205 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:46:07,210 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:47:21,318 - __main__ - INFO - Starting full sync cycle
+2026-02-09 15:47:21,330 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:47:21,359 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:47:51,360 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:47:51,361 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:47:51,362 - __main__ - INFO - Full sync completed successfully
+2026-02-09 15:47:52,365 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:47:52,368 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:47:52,369 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:47:52,372 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:48:07,413 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:48:07,419 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:50:07,672 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:50:07,673 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:52:07,907 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:52:07,909 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:52:53,093 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:52:53,105 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:54:08,284 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:54:08,286 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:56:08,415 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:56:08,418 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 15:57:53,250 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:57:53,273 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:57:53,274 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 15:57:53,277 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 15:58:09,291 - processors_simple - INFO - Starting NLP processing
+2026-02-09 15:58:09,292 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:00:09,354 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:00:09,355 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:02:09,441 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:02:09,447 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:02:53,518 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:02:53,542 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:04:09,671 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:04:09,673 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:06:09,859 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:06:09,861 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:07:54,009 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:07:54,017 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:07:54,019 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:07:54,023 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:08:10,041 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:08:10,042 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:10:10,216 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:10:10,217 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:12:10,343 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:12:10,343 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:12:54,364 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:12:54,382 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:14:10,415 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:14:10,416 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:24:43,836 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:24:43,837 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:24:43,838 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:24:43,853 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:24:43,854 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:24:43,856 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:26:43,988 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:26:44,002 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:28:44,210 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:28:44,214 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:29:44,327 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:29:44,361 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:30:44,435 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:30:44,439 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:32:44,635 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:32:44,638 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:34:44,829 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:34:44,841 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:34:44,847 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:34:44,850 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:34:44,854 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:34:44,855 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:36:45,032 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:36:45,037 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:38:45,219 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:38:45,220 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:39:45,323 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:39:45,329 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:40:45,418 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:40:45,421 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:42:45,630 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:42:45,631 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:44:45,793 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:44:45,797 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:44:45,798 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:44:45,800 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:44:45,802 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:44:45,803 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:46:46,010 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:46:46,012 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:47:52,120 - __main__ - INFO - Starting full sync cycle
+2026-02-09 16:47:52,124 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:47:52,130 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:48:22,135 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:48:22,136 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:48:22,137 - __main__ - INFO - Full sync completed successfully
+2026-02-09 16:48:46,169 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:48:46,186 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:49:46,257 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:49:46,260 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:50:46,345 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:50:46,347 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:52:46,529 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:52:46,530 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:54:46,685 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:54:46,688 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:54:46,689 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:54:46,691 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 16:54:46,691 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:54:46,692 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:56:46,884 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:56:46,892 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:58:47,071 - processors_simple - INFO - Starting NLP processing
+2026-02-09 16:58:47,072 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 16:59:47,145 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 16:59:47,149 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:00:47,234 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:00:47,235 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:02:47,403 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:02:47,407 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:04:47,542 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:04:47,555 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:04:47,556 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:04:47,559 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:04:47,561 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:04:47,562 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:06:47,730 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:06:47,731 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:08:47,920 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:08:47,921 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:09:48,028 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:09:48,033 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:10:48,116 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:10:48,119 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:12:48,325 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:12:48,326 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:14:48,479 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:14:48,483 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:14:48,484 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:14:48,489 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:14:48,495 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:14:48,496 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:16:48,695 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:16:48,696 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:18:48,837 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:18:48,842 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:19:48,919 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:19:48,934 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:20:49,022 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:20:49,024 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:22:49,216 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:22:49,220 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:24:49,339 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:24:49,352 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:24:49,355 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:24:49,358 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:24:49,358 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:24:49,360 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:26:49,452 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:26:49,453 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:28:49,586 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:28:49,587 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:29:49,654 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:29:49,660 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:30:49,743 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:30:49,745 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:32:49,865 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:32:49,866 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:34:50,054 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:34:50,060 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:34:50,061 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:34:50,065 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 17:34:50,066 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:34:50,066 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:36:50,190 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:36:50,191 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:38:50,276 - processors_simple - INFO - Starting NLP processing
+2026-02-09 17:38:50,277 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 17:39:50,345 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 17:39:50,357 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:32:23,015 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:32:23,089 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:32:23,116 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:32:23,141 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:32:23,154 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:32:23,166 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:32:23,174 - __main__ - INFO - Starting full sync cycle
+2026-02-09 18:32:23,184 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:32:23,193 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:32:53,225 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:32:53,277 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:32:53,278 - __main__ - INFO - Full sync completed successfully
+2026-02-09 18:34:23,413 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:34:23,419 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:36:23,531 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:36:23,533 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:37:26,577 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:37:28,088 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:38:24,474 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:38:24,523 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:40:24,760 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:40:24,994 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:42:23,934 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:42:24,303 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:42:25,370 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:42:25,718 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:42:29,019 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:42:29,065 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:44:26,454 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:44:26,552 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:46:26,723 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:46:26,815 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:47:31,207 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:47:31,561 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:48:27,401 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:48:27,451 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:50:27,527 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:50:27,535 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:52:24,946 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:52:25,173 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:52:28,296 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:52:28,305 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:52:32,325 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:52:32,334 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:54:29,215 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:54:29,421 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:56:30,855 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:56:31,433 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 18:57:32,941 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 18:57:34,073 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 18:58:32,638 - processors_simple - INFO - Starting NLP processing
+2026-02-09 18:58:32,830 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:00:33,027 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:00:33,043 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:02:28,154 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:02:28,907 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:02:34,015 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:02:34,019 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:02:35,243 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:02:35,508 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:04:35,016 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:04:35,060 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:06:36,088 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:06:37,426 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:07:37,290 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:07:37,515 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:08:38,891 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:08:41,535 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:10:42,267 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:10:42,293 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:12:29,574 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:12:30,209 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:12:38,369 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:12:38,387 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:12:42,471 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:12:42,536 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:14:42,866 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:14:43,056 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:16:43,589 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:16:43,661 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:17:38,764 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:17:39,010 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:18:44,175 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:18:44,257 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:20:44,390 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:20:44,445 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:22:31,201 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:22:31,668 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:22:39,782 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:22:39,809 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:22:45,165 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:22:45,181 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:24:45,587 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:24:46,054 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:26:46,362 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:26:46,483 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:27:41,352 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:27:41,957 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:28:47,512 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:28:47,525 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:30:47,906 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:30:47,946 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:32:33,057 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:32:33,882 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:32:42,215 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:32:42,275 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:32:48,502 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:32:48,579 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:32:53,850 - __main__ - INFO - Starting full sync cycle
+2026-02-09 19:32:53,923 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:32:53,997 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:33:24,162 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:33:24,415 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:33:24,614 - __main__ - INFO - Full sync completed successfully
+2026-02-09 19:34:51,076 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:34:54,822 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:36:55,671 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:36:55,810 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:37:45,182 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:37:46,260 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:38:56,028 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:38:56,445 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:40:57,377 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:40:57,578 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:42:38,112 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:42:38,612 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:42:46,831 - collectors - INFO - Starting OSINT collection cycle
+2026-02-09 19:42:46,918 - collectors - INFO - OSINT collection cycle completed
+2026-02-09 19:42:58,557 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:42:58,587 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'
+2026-02-09 19:44:59,474 - processors_simple - INFO - Starting NLP processing
+2026-02-09 19:44:59,494 - processors_simple - ERROR - Processing failed: DatabaseManager.get_unprocessed_articles() got an unexpected keyword argument 'limit'

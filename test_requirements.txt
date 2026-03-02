@@ -1,0 +1,24 @@
+# Authentication System Test Dependencies
+
+# Core testing
+requests>=2.31.0
+selenium>=4.15.0
+
+# Backend testing
+django>=4.2.0
+djangorestframework>=3.14.0
+
+# Frontend testing (for Selenium)
+webdriver-manager>=4.0.0
+
+# Security testing
+cryptography>=41.0.0
+secrets>=1.0.0
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# Development and debugging
+colorama>=0.4.6
+tabulate>=0.9.0
